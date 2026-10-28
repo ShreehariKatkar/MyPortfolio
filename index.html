@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shreehari Katkar | AI and Machine Learning Portfolio</title>
+<meta name="description" content="Portfolio of Shreehari Katkar, Computer Engineering student seeking an AI Engineer Intern role. Projects in AI agents, NLP, and machine learning.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237c5cff'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a14;--card:#12121f;--line:#252540;--tx:#e9e9f5;--mu:#9a9ab8;--p:#7c5cff;--c:#22d3ee;
+--g:linear-gradient(120deg,#7c5cff,#22d3ee);
+--d:"Space Grotesk",system-ui,sans-serif;--b:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.7 var(--b);overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:6px}
+.blob{position:fixed;border-radius:50%;filter:blur(110px);opacity:.28;pointer-events:none;z-index:0}
+.b1{width:480px;height:480px;background:#7c5cff;top:-140px;left:-120px}
+.b2{width:420px;height:420px;background:#22d3ee;bottom:-160px;right:-120px;opacity:.2}
+#glow{position:fixed;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,255,.18),transparent 65%);pointer-events:none;z-index:0;transform:translate(-50%,-50%);left:-400px;top:-400px}
+.wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:20;background:rgba(10,10,20,.78);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1040px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.logo{font:700 22px var(--d);text-decoration:none;margin-right:auto}
+.logo span{color:var(--c)}
+.bar a.n{text-decoration:none;font-size:15px;color:var(--mu);padding:6px 11px;border-radius:8px}
+.bar a.n:hover{color:var(--tx);background:rgba(255,255,255,.06)}
+section{padding:92px 0;position:relative;z-index:1}
+.tag{font:500 15px var(--b);color:var(--c);margin:0 0 6px}
+h2{font:700 clamp(32px,5vw,46px)/1.1 var(--d);margin:0 0 36px;letter-spacing:-.02em}
+.grad{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* hero */
+.hero{min-height:calc(100vh - 60px);display:flex;align-items:center;padding:60px 0}
+.hero .role{font:500 17px var(--b);color:var(--c);margin:0 0 12px}
+.hero h1{font:700 clamp(46px,9vw,92px)/1 var(--d);margin:0 0 22px;letter-spacing:-.03em}
+.hero p{max-width:56ch;color:var(--mu);font-size:19px;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:12px;transition:transform .2s,box-shadow .2s}
+.btn.p{background:var(--g);color:#0a0a14}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,92,255,.35)}
+.btn.o{border:1px solid var(--line);background:var(--card)}
+.btn.o:hover{border-color:var(--p)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:34px}
+.chips span,.tg span{font-size:14px;padding:4px 13px;border-radius:99px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#cfcfe8}
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:rgba(124,92,255,.6);transform:translateY(-3px)}
+.about p{color:var(--mu);margin:0 0 16px;max-width:64ch}
+.about .g{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start}
+.facts{display:grid;gap:14px}
+.fact b{display:block;font:700 22px var(--d)}
+.fact span{color:var(--mu);font-size:15px}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.sg h3{font:700 19px var(--d);margin:0 0 14px}
+.sg h3 i{font-style:normal;margin-right:8px}
+.tg{display:flex;flex-wrap:wrap;gap:8px}
+.pg{display:grid;gap:22px}
+.pr{display:grid;grid-template-columns:1fr;gap:0}
+.pr h3{font:700 25px/1.2 var(--d);margin:4px 0 8px}
+.st{display:inline-block;font-size:13px;font-weight:600;padding:2px 12px;border-radius:99px;border:1px solid rgba(34,211,238,.5);color:var(--c)}
+.st.d{border-color:rgba(124,92,255,.6);color:#b4a2ff}
+.pr p{color:var(--mu);margin:0 0 10px;max-width:70ch}
+.pr ul{margin:0 0 16px;padding-left:20px;color:#cfcfe8}
+.pr li{margin:5px 0;max-width:72ch}
+.ex{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.ex h3{font:700 22px var(--d);margin:0}
+.ex small{color:var(--c);font-size:15px}
+.ex+p{color:var(--mu);margin:2px 0 12px}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cg ul{margin:0;padding-left:20px;color:#cfcfe8}
+.cg li{margin:8px 0}
+.contact{text-align:center}
+.contact h2{margin-bottom:14px;font-size:clamp(36px,7vw,64px)}
+.contact p{color:var(--mu);margin:0 auto 26px;max-width:48ch}
+.mail{display:inline-block;font:700 clamp(20px,3.6vw,32px) var(--d);text-decoration:none;word-break:break-all}
+.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+footer{position:relative;z-index:1;text-align:center;color:var(--mu);font-size:14px;padding:26px 22px;border-top:1px solid var(--line)}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:760px){.about .g,.cg{grid-template-columns:1fr}section{padding:64px 0}.bar a.n{padding:6px 8px;font-size:14px}}
+@media (hover:none){#glow{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.btn,.card{transition:none}#glow{display:none}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div id="glow"></div>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">SK<span>.</span></a>
+    <a class="n" href="#about">About</a><a class="n" href="#skills">Skills</a><a class="n" href="#projects">Projects</a><a class="n" href="#experience">Experience</a><a class="n" href="#education">Education</a><a class="n" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <div>
+    <p class="role">Computer Engineering student and aspiring AI Engineer Intern</p>
+    <h1>Shreehari <span class="grad">Katkar.</span></h1>
+    <p>I apply Python and machine learning to real-world problems. I build, test, and document AI solutions, from LLM-powered agents to NLP and prediction models.</p>
+    <div class="btns"><a class="btn p" href="#projects">View my work</a><a class="btn o" href="#contact">Get in touch</a></div>
+    <div class="chips"><span>Python</span><span>Scikit-learn</span><span>TensorFlow</span><span>Pandas</span><span>Flask</span><span>Streamlit</span></div>
+  </div>
+</div>
+
+<section class="about" id="about"><div class="wrap">
+  <p class="tag">Who I am</p>
+  <h2>About me</h2>
+  <div class="g">
+    <div class="rv">
+      <p>I’m a Computer Engineering student at Shah and Anchor Kutchhi Engineering College in Mumbai, graduating in 2027. I’m looking for an AI Engineer Intern role where I can work on real problems alongside engineers and data scientists.</p>
+      <p>I’m a quick learner who is interested in emerging AI tools and research. I document my processes and results, work well in teams, and explain technical ideas clearly.</p>
+    </div>
+    <div class="facts rv">
+      <div class="card fact"><b>3 projects</b><span>AI agent, NLP, and ML API</span></div>
+      <div class="card fact"><b>Web developer intern</b><span>Leap Booster Technology</span></div>
+      <div class="card fact"><b>Class of 2027</b><span>B.Tech, Computer Engineering</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <p class="tag">What I know</p>
+  <h2>Skills and technologies</h2>
+  <div class="sg">
+    <div class="card rv"><h3><i>💻</i>Programming</h3><div class="tg"><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span></div></div>
+    <div class="card rv"><h3><i>🧠</i>AI and ML libraries</h3><div class="tg"><span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch (basics)</span><span>NumPy</span><span>Pandas</span></div></div>
+    <div class="card rv"><h3><i>📈</i>Machine learning</h3><div class="tg"><span>Regression</span><span>Classification</span><span>Decision Trees</span><span>Random Forest</span><span>Naive Bayes</span><span>Basic CNNs</span><span>Model evaluation</span></div></div>
+    <div class="card rv"><h3><i>🧹</i>Data preprocessing</h3><div class="tg"><span>Data cleaning</span><span>Missing values</span><span>Encoding</span><span>Scaling</span><span>Feature engineering</span><span>Train/test split</span><span>Cross-validation</span></div></div>
+    <div class="card rv"><h3><i>🛠️</i>Tools</h3><div class="tg"><span>Jupyter Notebook</span><span>Google Colab</span><span>Git and GitHub</span><span>Flask</span><span>Streamlit</span><span>Matplotlib</span><span>Seaborn</span></div></div>
+    <div class="card rv"><h3><i>🤝</i>Soft skills</h3><div class="tg"><span>Problem solving</span><span>Analytical thinking</span><span>Teamwork</span><span>Communication</span><span>Documentation</span></div></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <p class="tag">What I’ve built</p>
+  <h2>Projects</h2>
+  <div class="pg">
+
+    <article class="card pr rv">
+      <div><span class="st">Ongoing</span></div>
+      <h3>🤖 YouTube Video Analyzer (AI Agent)</h3>
+      <p>An AI agent that takes a YouTube link, reads the transcript, and returns a summary, key topics, and answers to questions about the video.</p>
+      <ul>
+        <li>Fetches the transcript and uses an LLM to generate a summary and key topics</li>
+        <li>Answers follow-up questions about the video, splitting long transcripts into chunks to fit model limits</li>
+        <li>Prompts refined to keep answers based on the transcript, with setup documented in a GitHub README</li>
+      </ul>
+      <div class="tg"><span>Python</span><span>LLM API</span><span>YouTube Transcript API</span><span>Prompt Engineering</span></div>
+    </article>
+
+    <article class="card pr rv">
+      <div><span class="st d">Completed</span></div>
+      <h3>🏠 House Price Prediction with ML API</h3>
+      <p>A machine learning model that predicts house prices, served through a web app and API.</p>
+      <ul>
+        <li>Performed exploratory data analysis and feature engineering on a housing dataset</li>
+        <li>Compared Linear Regression and Random Forest using cross-validation and RMSE</li>
+        <li>Integrated the selected model into a Flask web app and API</li>
+      </ul>
+      <div class="tg"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Flask</span></div>
+    </article>
+
+    <article class="card pr rv">
+      <div><span class="st d">Completed</span></div>
+      <h3>💬 Sentiment Analysis of Product Reviews (NLP)</h3>
+      <p>A classifier that labels product reviews as positive or negative.</p>
+      <ul>
+        <li>Preprocessed text using tokenization, stop-word removal, and TF-IDF vectorization</li>
+        <li>Compared Logistic Regression and Naive Bayes using accuracy, precision, recall, and F1-score</li>
+        <li>Built a Streamlit app for live predictions and documented the workflow in a GitHub README</li>
+      </ul>
+      <div class="tg"><span>Python</span><span>Scikit-learn</span><span>NLTK</span><span>Streamlit</span></div>
+    </article>
+
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <p class="tag">Where I’ve worked</p>
+  <h2>Experience</h2>
+  <div class="card rv">
+    <div class="ex"><h3>Web Developer Intern</h3><small>Jul–Dec</small></div>
+    <p>Leap Booster Technology</p>
+    <ul style="margin:0;padding-left:20px;color:#cfcfe8">
+      <li>Developed and maintained web application features with a cross-functional team</li>
+      <li>Gained hands-on experience in debugging, version control, teamwork, and meeting deadlines</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <p class="tag">My journey</p>
+  <h2>Education and certifications</h2>
+  <div class="cg">
+    <div class="card rv">
+      <p class="tag" style="margin-bottom:4px">Expected 2027</p>
+      <h3 style="font:700 22px var(--d);margin:0 0 4px">B.Tech in Computer Engineering</h3>
+      <p style="color:var(--mu);margin:0">Shah and Anchor Kutchhi Engineering College, Mumbai</p>
+    </div>
+    <div class="card rv">
+      <h3 style="font:700 20px var(--d);margin:0 0 8px">Certifications</h3>
+      <ul>
+        <li>Data Structures and Algorithms (DSA), Apna College</li>
+        <li>Artificial Intelligence and Machine Learning (AI/ML), Apna College</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <p class="tag">Say hello</p>
+  <h2>Let’s build something <span class="grad">together.</span></h2>
+  <p>I’m looking for an AI Engineer Intern role. Email is the quickest way to reach me.</p>
+  <a class="mail grad" href="mailto:shreehari2605@gmail.com">shreehari2605@gmail.com</a>
+  <div class="links">
+    <a class="btn o" href="tel:+919867220962">+91 98672 20962</a>
+    <a class="btn o" href="https://www.linkedin.com/in/shreehari-katkar-47622328b/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></section>
+
+</main>
+<footer>© 2026 Shreehari Katkar. Computer Engineering student, Mumbai.</footer>
+
+<script>
+(function(){
+  var d=document.documentElement;d.classList.add('js');
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+  var g=document.getElementById('glow');
+  addEventListener('mousemove',function(e){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'},{passive:true});
+})();
+</script>
+</body>
+</html>
